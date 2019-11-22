@@ -1,0 +1,8 @@
+Friend-Suggestion(n, m)
+for (int i=1, i<=10, i++)
+{
+    for (int m=1, i<=10, i++)
+    {
+        
+    }
+}

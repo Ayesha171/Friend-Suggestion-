@@ -1,25 +1,8 @@
-/**
-   * Get the friends id for the given user id.
-   * 
-   * @param type $userId
-   * @return type
-   */
-  public function getFriends($userId) {
-    $sql = 'SELECT * FROM `relationship` WHERE ' .
-            '(`user_one_id` = ' . $userId . ' OR `user_two_id` = '. $userId .') ' .
-            'AND `status` = 1';
-            
-    $resultObj = $this->dbCon->query($sql);
-    
-    $friends = array();
-    
-    while($row = $resultObj->fetch_assoc()) {
-      if ($row['user_one_id'] !== $userId) {
-        $friends[] = $row['user_one_id'];
-      }
-      
-      if ($row['user_two_id'] !== $userId) {
-        $friends[] = $row['user_two_id'];
-      }
+Friend-Suggestion(n, m)
+for (int i=1, i<=10, i++)
+{
+    for (int m=1, i<=10, i++)
+    {
+        
     }
 }

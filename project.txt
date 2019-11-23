@@ -75,3 +75,25 @@
       }
       
     }
+    # Convert the friend id's to user objects.
+    $suggestedFriendObjs = array();
+    if (!empty($suggestedFriends)) {
+      foreach ($suggestedFriends as $suggestedFriend => $mutualFriends) {
+        $suggestedFriendObj = new stdClass();
+        $suggestedFriendObj->suggestedUser = $this->getUser($suggestedFriend);
+        
+        if (!empty($mutualFriends)) {
+          $mutualFriendObjs = [];
+          foreach ($mutualFriends['mutual_friends'] as $mutualFriend) {
+            $mutualFriendObjs[] =  $this->getUser($mutualFriend);
+          }
+        }
+        
+        $suggestedFriendObj->mutualFriends = $mutualFriendObjs;
+        $suggestedFriendObjs[] = $suggestedFriendObj;
+      }
+    }
+    
+    return $suggestedFriendObjs;
+  }
+... .. ...

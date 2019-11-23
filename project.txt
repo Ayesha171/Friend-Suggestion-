@@ -1,6 +1,5 @@
 /**
    * Get the friends id for the given user id.
-   * 
    * @param type $userId
    * @return type
    */

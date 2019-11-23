@@ -97,3 +97,29 @@
     return $suggestedFriendObjs;
   }
 ... .. ...
+<?php
+include_once('../app/config.php');
+
+$response = [
+  'status' => false,
+  'data' => 'No friends list available for this user.'
+];
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['user_id'])) {
+  $user = new User();
+  $loggedInUser = $user->getUser($mysqli, (int) $_GET['user_id']);
+  
+  # If the logged in user exists.
+  if ($loggedInUser) {
+    $relation = new Relation($mysqli, $loggedInUser);
+    $friendSuggestions = $relation->getFriendSuggestions();
+    
+    $response['status'] = true;
+    $response['data'] = $friendSuggestions;
+  } else {
+    $response['data'] = 'User not available.';
+  }
+}
+
+header('Content-Type: application/json');
+echo json_encode($response);

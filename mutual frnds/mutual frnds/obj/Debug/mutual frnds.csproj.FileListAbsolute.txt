@@ -1,0 +1,9 @@
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\bin\Debug\mutual frnds.exe.config
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\bin\Debug\mutual frnds.exe
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\bin\Debug\mutual frnds.pdb
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\obj\Debug\mutual frnds.csprojResolveAssemblyReference.cache
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\obj\Debug\mutual_frnds.Form1.resources
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\obj\Debug\mutual_frnds.Properties.Resources.resources
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\obj\Debug\mutual frnds.csproj.GenerateResource.Cache
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\obj\Debug\mutual frnds.exe
+c:\users\maham imran\documents\visual studio 2015\Projects\mutual frnds\mutual frnds\obj\Debug\mutual frnds.pdb

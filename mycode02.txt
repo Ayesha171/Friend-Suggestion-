@@ -12,10 +12,8 @@
             }
             else
             {
-                MessageBox.Show("enter number of persons");
+                MessageBox.Show("Enter Number Of Person");
             }
-
-
             foreach(person x in personStore)
             {
                 x.Suguestions = xyz(x);
